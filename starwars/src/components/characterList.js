@@ -11,6 +11,8 @@ const CharacterList = () => {
     axios.get(`https://swapi.co/api/people/`)
       .then(response => {
         console.log(response);
+        console.log(response.data.results);
+        setCharacters(response.data.results);
       })
       .catch(error => {
         console.log(error);
@@ -19,7 +21,7 @@ const CharacterList = () => {
 
   return (
     <div className = 'list-contain'>
-      <h1>CharacterList component</h1>
+      <h1>Significant Characters:</h1>
 
       {characters.map((character, index) => {
         return <CharacterCard key={index} character={character} />
