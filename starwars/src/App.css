@@ -6,3 +6,28 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.list-contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-contain h1 {
+  width: 100%;
+  text-shadow: 1px 1px 5px #fff;
+}
+
+.card-contain {
+  width: 30%;
+  margin: 1rem;
+}
+
+.card-title {
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: 1.5rem;
+}
